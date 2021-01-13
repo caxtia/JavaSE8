@@ -11,6 +11,26 @@ public class Employee {
     private double salary;
     private BenefitsHelper helper = new BenefitsHelper();
     
+
+    private class BenefitsHelper{
+        private final double bonusRate = 0.02;
+        private final double withholdingRate = 0.07;
+
+        protected double calcBonus(double salary){
+            return salary * bonusRate;
+        }
+
+        protected double calcWithholding(double salary){
+            return salary * withholdingRate;
+        }
+
+    }
+
+    public double getWithholding(){
+        return helper.calcWithholding(salary);
+    }
+
+
     public Employee(){
         super();
     }
@@ -37,28 +57,16 @@ public class Employee {
     public double getSalary() {
         return salary;
     }
+
     
     public double getWitholding(){
-        return helper.calcWitholding(salary);
+        return helper.calcWithholding(salary);
     }
     
     public double getBonus(){
         return helper.calcBonus(salary);
     }
     
-    private class BenefitsHelper{
-        private final double bonusRate = 0.02;
-        private final double witholdingRate = 0.07;
-        
-        protected double calcBonus(double salary){
-            return salary * bonusRate;
-        }
-        
-        protected double calcWitholding(double salary){
-            return salary * witholdingRate;
-        }
-        
-        
-    }
+   
     
 }
