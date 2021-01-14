@@ -24,11 +24,20 @@ public class LambdaTest {
     
     System.out.println("==Ends With==");
     // Your code here
+    stringTool.showResult(strList01, searchStr, 
+      (t,s) -> t.endsWith(s));
+ 
     
     System.out.println("==Less than 5==");
     // Your Code here
+    stringTool.showResult(strList01, searchStr, 
+      (t,s) -> t.contains(s) && t.length() <= 5);
+ 
     
     System.out.println("==Greater than 5==");
     // Your code here
+    stringTool.showResult(strList01, searchStr, 
+      (t,s) -> t.contains(s) && t.length() > 5);
+ 
   }    
 }
