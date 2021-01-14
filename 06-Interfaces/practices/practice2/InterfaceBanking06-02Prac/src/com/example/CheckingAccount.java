@@ -1,7 +1,7 @@
 package com.example;
 
 
-public class CheckingAccount extends Account {
+public class CheckingAccount extends Account{
     
     private final double overDraftLimit;
     
@@ -28,5 +28,20 @@ public CheckingAccount(double balance) {
     public String getDescription() {
         return "Checking Account";
     }
+
+    @Override
+    public double getBalance() {
+        return balance;
+    }
+
+    @Override
+    public void deposit(double amount) {
+        balance += amount;
+    }
     
+    @Override
+    public String toString() {
+        return this.getDescription() +" balance is " + balance;
+    }
+
 }

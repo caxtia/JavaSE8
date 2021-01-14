@@ -10,12 +10,7 @@ public class SavingsAccount extends Account{
         super(balance);
     }
 
-    
-    
- 
-    
-
-    @Override
+   // @Override
     public boolean withdraw(double amount) {
         if(amount <= balance ) {
             balance -= amount;
@@ -37,5 +32,16 @@ public class SavingsAccount extends Account{
     public String getDescription() {
         return "Savings Account";
     }
+
+    @Override
+    public double getBalance() {
+        return balance;
+    }
+
+    @Override
+    public String toString() {
+        return this.getDescription() + " balance is " + balance;
+    }
+
     
 }

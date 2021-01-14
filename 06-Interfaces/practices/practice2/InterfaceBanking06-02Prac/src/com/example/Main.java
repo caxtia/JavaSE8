@@ -3,16 +3,20 @@ package com.example;
 public class Main {
 
     public static void main(String[] args) {
-        Bank bank = new Bank();
+        //Bank bank = new Bank();
+        BankOperations bank = new Bank();
         initializeCustomers(bank);
+        
 
         // run the customer report
-        CustomerReport report = new CustomerReport();
+       /* CustomerReport report = new CustomerReport();
         report.setBank(bank);
         report.generateReport();
+        */
+        bank.generateReport();
     }
 
-    private static void initializeCustomers(Bank bank) {
+    private static void initializeCustomers(BankOperations bank) {
         Customer customer;
 // Create several customers and their accounts
         bank.addCustomer("Will", "Smith",Branch.LA);
