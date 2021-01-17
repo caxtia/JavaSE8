@@ -18,6 +18,10 @@ public class RoboMailTest01 {
     System.out.println("\n=== All Sales 50+");
     
     // Print sales employees 50+
-
+    pl.stream()
+      .filter(p->p.getDept().equals("Sales"))
+      .filter(p->p.getAge() >50)
+      .forEach(p->robo.roboMail(p));
+  
   }
 }
