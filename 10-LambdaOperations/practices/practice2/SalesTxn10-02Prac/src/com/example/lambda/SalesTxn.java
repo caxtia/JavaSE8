@@ -20,6 +20,7 @@ public class SalesTxn {
     private String city;
     private State state;
     private String code;
+	public char[] quantReport;
     
     public static class Builder{
     
