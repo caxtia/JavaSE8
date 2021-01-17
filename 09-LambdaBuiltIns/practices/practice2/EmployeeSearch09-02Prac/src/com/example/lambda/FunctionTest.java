@@ -18,7 +18,9 @@ public class FunctionTest {
       
     System.out.println("=== First Employee Bonus");
     first.printSummary();
-    System.out.println("Bonus: " ); // Print the result here
+     
+
+    System.out.println("Bonus: " + first.getSalary() * Bonus.byRole(first.getRole())); // Print the result here
         
   }
 }
