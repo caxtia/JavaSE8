@@ -40,7 +40,7 @@ public class LazyTest {
         com.example.lambda.LazyTest$$Lambda$1/0x0000000800bb1470@13221655
         com.example.lambda.LazyTest$$Lambda$1/0x0000000800bb1470@13221655
         */
-        .forEach(t -> System.out.println(quantReport));
+        .forEach(quantReport);
         
         
             

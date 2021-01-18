@@ -20,8 +20,14 @@ public class JoinTest {
         String result = ""; //Replace with your stream
         
         System.out.println("Buyer list: " + result);
-            
-        
+         result = "" + tList.stream()
+            .map(t-> t.getBuyerName())
+            .distinct()
+            .sorted()
+            .collect(Collectors.joining(", "));
+
+
+        System.out.println("Buyer list: " + result);
         
         
     }
