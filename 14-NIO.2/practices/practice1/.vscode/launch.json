@@ -1,0 +1,55 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "cwd": "${workspaceFolder}/LambdaFiles14-01Prac" 
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "com.example.lambda.Main",
+            "projectName": "practice1_a0e738e2",
+            "cwd": "${workspaceFolder}/LambdaFiles14-01Prac" 
+        },
+        {
+            "type": "java",
+            "name": "Launch P01BufferedReader",
+            "request": "launch",
+            "mainClass": "com.example.lambda.P01BufferedReader",
+            "projectName": "practice1_a0e738e2",
+            "cwd": "${workspaceFolder}/LambdaFiles14-01Prac" 
+        },
+        {
+            "type": "java",
+            "name": "Launch P02NioRead",
+            "request": "launch",
+            "mainClass": "com.example.lambda.P02NioRead",
+            "projectName": "practice1_a0e738e2",
+            "cwd": "${workspaceFolder}/LambdaFiles14-01Prac" 
+        },
+        {
+            "type": "java",
+            "name": "Launch P03NioReadAll",
+            "request": "launch",
+            "mainClass": "com.example.lambda.P03NioReadAll",
+            "projectName": "practice1_a0e738e2",
+            "cwd": "${workspaceFolder}/LambdaFiles14-01Prac" 
+        },
+        {
+            "type": "java",
+            "name": "Launch P04NioReadAll",
+            "request": "launch",
+            "mainClass": "com.example.lambda.P04NioReadAll",
+            "projectName": "practice1_a0e738e2",
+            "cwd": "${workspaceFolder}/LambdaFiles14-01Prac" 
+        }
+    ]
+}

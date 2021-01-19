@@ -12,15 +12,16 @@ import java.util.stream.Stream;
 public class P02NioRead {
     
     public static void main(String[] args) {
-/*  Remove these comments      
-        try{ // Create Try with Resources here
-            
-            System.out.println("\n=== Entire File ===");
-            // print lines here
-            
-        }catch (IOException e){
-            System.out.println("Error: " + e.getMessage());
-        }
-*/
-    } 
+/*  Remove these comments   */   
+    try(Stream<String> lines = Files.lines(Paths.get("hamlet.txt"))){
+                
+        System.out.println("\n=== Entire File ===");
+        lines.forEach(line -> System.out.println(line)); 
+        
+    }catch (IOException e){
+        System.out.println("Error: " + e.getMessage());
+    }
 }
+
+    } 
+
